@@ -1,0 +1,51 @@
+.units{
+    /* width: 100vh;
+    height: 100vh; */
+    padding: 0;
+    margin: 0;
+
+}
+
+.unit-header{
+    width: 40%;
+    height: 20%;
+    background-color:rgb(48, 13, 59);;
+    margin: 0 auto;
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.unit-header h3{
+    float: left;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.unit-header button{
+    margin-left: 25%;
+}
+
+#unit-body-btn ::after{
+    border: 2px solid red;
+}
+
+#unit-body-btn{
+    color: white;
+    background-color: rgb(48, 13, 59);
+    width: 5px;
+    padding: 38px 60px;
+    border-radius: 100%;
+    border: none;
+    animation: spin 1s infinite linear;
+    border: 2px solid white;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+

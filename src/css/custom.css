@@ -1,0 +1,196 @@
+/* button */
+
+.custom-btn {
+    background-color: #fff;
+    color: rgb(170, 32, 216);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.9rem 9rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.custom-btn:hover {
+    background-color: #fff;
+    color: rgb(170, 32, 216);
+    text-shadow: 0 0 1px rgb(48, 13, 59), 0 0 20px rgb(48, 13, 59), 0 0 30px;
+    animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    70% {
+        transform: translateY(0%);
+    }
+
+    80% {
+        transform: translateY(-15%);
+    }
+
+    90% {
+        transform: translateY(0%);
+    }
+
+    95% {
+        transform: translateY(-7%);
+    }
+
+    97% {
+        transform: translateY(0%);
+    }
+
+    99% {
+        transform: translateY(-3%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* close-button */
+.close-Btn {
+    font-size: 2rem;
+    padding: 0px 9px;
+    border: none;
+    background-color: rgb(48, 13, 59);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    float: right;
+}
+
+.close-Btn::before {
+    content: "\00d7";
+}
+
+.close-Btn:hover {
+    background-color: #fff;
+    color: rgb(48, 13, 59);
+    cursor: pointer;
+}
+
+/* canvas start */
+.canvas-panel {
+    height: 20rem;
+    cursor: crosshair;
+}
+
+#canvas {
+    color: black;
+    font-size: 1rem;
+    border: none;
+}
+
+.canvas-panel h5 {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.color-palet {
+    border: 1px solid black;
+    display: inline-flex;
+    height: 260px;
+    width: 150px;
+    margin: 8rem 8rem 0rem 0rem;
+    float: right;
+    display: inline-block;
+
+}
+
+/* canvas-clear-btn */
+#canvas-clear-btn {
+    margin: 0;
+    padding: 0.5rem;
+
+}
+
+.col-12 {
+    text-align: center;
+    color: rgb(48, 13, 59);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+
+.select-colour {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid black;
+    margin: 0.4rem;
+    border-radius: 0.6rem;
+
+}
+
+#green {
+    background: rgb(142, 232, 142);
+}
+
+#green:hover {
+    box-shadow: 3px 3px 0px 0px rgb(142, 232, 142);
+}
+
+#blue {
+    background: rgb(115, 115, 225);
+}
+
+#blue:hover {
+    box-shadow: 3px 3px 0px 0px rgb(115, 115, 225);
+}
+
+#red {
+    background: rgb(154, 83, 83);
+}
+
+#red:hover {
+    box-shadow: 3px 3px 0px 0px rgb(154, 83, 83);
+}
+
+#black {
+    background: black;
+}
+
+#black:hover {
+    box-shadow: 3px 3px 0px 0px black;
+    ;
+}
+
+/*  */
+
+
+.select-er {
+    display: flex;
+    justify-content: center;
+    height: 15px;
+    border: 2px solid black;
+    width: 8px;
+    border-radius: 5px 5px 0px 0px;
+    display: inline-flex;
+    cursor: pointer;
+    background: linear-gradient(to top, red 10%, white 50%);
+}
+
+
+/* lesson end btn */
+#lesson-end-btn {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+    margin-top: 2.5%;
+    float: right;
+    cursor: pointer;
+    margin-left: 8rem;
+    background-color: rgb(48, 13, 59);
+
+}

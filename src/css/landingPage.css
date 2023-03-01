@@ -1,0 +1,40 @@
+#landingPage {
+    background-color: rgb(48, 13, 59);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* page-header */
+.page-header {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.page-header p {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 2.4rem;
+    text-align: left;
+    padding-left: 2rem;
+    margin-top: 0.8rem;
+}
+
+
+/* page-body class */
+.page-body {
+    position: relative;
+    margin-top: 10rem;
+    width: 45rem;
+    margin-left: 45rem
+}
+
+.page-body h3 {
+    font-weight: bolder;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #fff;
+}
+
