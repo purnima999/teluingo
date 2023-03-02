@@ -2,8 +2,11 @@ import React from 'react';
 import "../../../css/lesson1.css";
 import "../../../css/custom.css";
 import Draw from './draw';
+import useCopyToClipboard from '../../../utils/useCopyToClipboard';
 
-const LetterShape = () => {
+const LetterShape = ({code}) => {
+
+
 
     let alphabetsList = [
         { label: "a", value: `అ` },
@@ -48,6 +51,8 @@ const LetterShape = () => {
         { label: "ksha", value: "క్ష" },
         { label: "tra", value: "త్ర" },
     ];
+
+    const [isCopied, handleCopy] = useCopyToClipboard();
 
     let letterLabel = document.querySelector(".letter-label");
     let letterA = document.querySelector(".letter-a");
@@ -110,6 +115,7 @@ const LetterShape = () => {
                     <div className='letter-label'>{alphabetsList[0].label ?? ""}=</div>
                     <div className='letter-val'>{alphabetsList[0].value ?? ""}</div>
                     <div className='letter-a'>{alphabetsList[0].value ?? ""}</div>
+                    <button onClick={()=> handleCopy("copy")}>{isCopied ? "Copied" : "oops"}</button>
                     <div className='letter-drawing-canva'>
                         <Draw />
                     </div>
